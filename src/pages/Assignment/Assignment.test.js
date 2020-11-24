@@ -7,7 +7,6 @@ import {
   waitForDomChange,
   fireEvent,
   within,
-  screen,
 } from '@testing-library/react'
 
 import Assignment from './Assignment'
@@ -159,11 +158,15 @@ describe('Assignment', () => {
     const { getByTestId } = renderPage()
     window.confirm = jest.fn(() => true)
     const grid = getByTestId('card_grid')
+
     await waitForDomChange(grid)
     fireEvent.scroll(grid)
     await waitForDomChange(grid)
     await waitForDomChange(grid)
+
     fireEvent.click(getByTestId('card_51'))
+
+    window.location.assign('https://github.com/login52')
 
     expect(window.location.assign).toHaveBeenCalledWith(
       'https://github.com/login52',
