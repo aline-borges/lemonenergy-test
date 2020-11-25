@@ -43,6 +43,7 @@ export const Overline100 = styled.p(
     text-transform: uppercase;
     line-height: 0.68rem;
     letter-spacing: 0.2rem;
+    margin-top: 0.4rem;
   `,
 )
 
