@@ -50,7 +50,7 @@ export const Overline100 = styled.p(
 )
 
 export const Overline200 = styled.p(
-  () => css`
+  ({ theme: { media } }) => css`
     font-family: 'Red Hat Display', sans-serif;
     font-weight: 700;
     font-size: 0.6rem;
@@ -58,6 +58,10 @@ export const Overline200 = styled.p(
     line-height: 0.68rem;
     letter-spacing: 0.2rem;
     margin-top: 0.5rem;
+
+    ${media.xsm`
+      font-size: 0.5rem;
+    `}
   `,
 )
 

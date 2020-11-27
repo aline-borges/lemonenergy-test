@@ -10,6 +10,10 @@ const createMedia = (min, max) => (...styles) => css`
 `
 const media = { only: {} }
 
+media.xsm = (...styles) => css`
+  ${createMedia(320, 374)`${css(...styles)}`}
+`
+
 media.sm = (...styles) => css`
   ${createMedia(768)`${css(...styles)}`}
 `
