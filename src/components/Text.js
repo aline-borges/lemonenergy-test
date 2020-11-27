@@ -40,6 +40,7 @@ export const Title200 = styled.h1(
 
 export const Overline100 = styled.p(
   () => css`
+    font-family: 'Red Hat Display', sans-serif;
     font-weight: 700;
     font-size: 0.5rem;
     text-transform: uppercase;
@@ -50,6 +51,7 @@ export const Overline100 = styled.p(
 
 export const Overline200 = styled.p(
   () => css`
+    font-family: 'Red Hat Display', sans-serif;
     font-weight: 700;
     font-size: 0.6rem;
     text-transform: uppercase;
