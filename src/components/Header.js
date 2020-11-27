@@ -1,7 +1,7 @@
 import React from 'react'
 import styled, { css } from 'styled-components'
 import { Container, Row } from './Grid'
-import { Overline100 } from './Text'
+import { Overline200 } from './Text'
 import { ReactComponent as LemonLogo } from '../images/LemonLogo.svg'
 
 const StyledHeader = styled.div(
@@ -29,7 +29,7 @@ const Header = () => {
       <Row>
         <StyledHeader>
           <LemonLogo className="__logo" />
-          <Overline100>Frontend - Technical Assignment</Overline100>
+          <Overline200>Frontend - Technical Assignment</Overline200>
         </StyledHeader>
       </Row>
     </Container>
