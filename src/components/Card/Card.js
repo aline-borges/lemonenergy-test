@@ -59,13 +59,6 @@ const Body = styled(PartialContainer)(
   `,
 )
 
-const Separator = styled.hr(
-  ({ theme: { colors } }) => css`
-    margin: 0;
-    border-top: 1px solid ${colors.secondary};
-  `,
-)
-
 const Container = styled.div(
   ({ theme: { colors } }) => css`
     border: 1px solid ${colors.secondary};
@@ -89,6 +82,8 @@ const Footer = styled(PartialContainer)(
 
       color: ${colors.text.caption};
     }
+
+    border-top: 1px solid ${colors.secondary};
 
     justify-content: flex-end;
     > *:not(:last-child) {
@@ -124,7 +119,6 @@ const Card = ({
           <Body200 data-testid="description">{description}</Body200>
         </Info>
       </Body>
-      <Separator />
       <Footer>
         {stats.map(({ icon, value }, i) => (
           <React.Fragment key={`stats_${i + 1}`}>
