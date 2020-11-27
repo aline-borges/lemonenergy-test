@@ -17,6 +17,7 @@ export const Body200 = styled.p(
     font-size: 0.88rem;
     line-height: 1.5rem;
     letter-spacing: 0.02rem;
+    margin-left: 0.2rem;
   `,
 )
 
@@ -33,6 +34,7 @@ export const Title200 = styled.h1(
     font-weight: 700;
     font-size: 1.5rem;
     line-height: 2rem;
+    margin-left: 0.2rem;
   `,
 )
 
@@ -43,7 +45,17 @@ export const Overline100 = styled.p(
     text-transform: uppercase;
     line-height: 0.68rem;
     letter-spacing: 0.2rem;
-    margin-top: 0.4rem;
+  `,
+)
+
+export const Overline200 = styled.p(
+  () => css`
+    font-weight: 700;
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    line-height: 0.68rem;
+    letter-spacing: 0.2rem;
+    margin-top: 0.5rem;
   `,
 )
 
