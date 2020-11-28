@@ -21,11 +21,11 @@ It is available for the developer, an application with many bugs such as:
 
 The application has two pages. 
 
-##### Intro 
+#### Intro 
 
 The first (/intro) should be read carefully, as it contains the last instructions for your test! 
 
-##### Assignment 
+#### Assignment 
 
 The test starts on the second page (/assignment).
 - When the user accesses the /assignment page, the application should request a list of 50 users and their data via the GitHub APIs and we present a list of cards, each containing a single user's information. While the request is not completed, a loading bar should appear at the top of the screen and increase its width indicating the progress of the request.
