@@ -10,7 +10,7 @@ import Button from '../../components/Button'
 import recommendations from './recommendations'
 
 const Container = styled(Grid.Container)(
-  ({ theme: { spacing } }) => css`
+  ({ theme: { spacing, auto } }) => css`
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -36,7 +36,7 @@ const Container = styled(Grid.Container)(
     }
 
     > ${Button} {
-      margin: ${spacing(8)} 0 ${spacing(3)};
+      margin: ${auto};
     }
   `,
 )
