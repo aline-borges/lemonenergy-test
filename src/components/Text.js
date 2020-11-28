@@ -57,7 +57,7 @@ export const Overline200 = styled.p(
     letter-spacing: 0.2rem;
     margin-top: 0.5rem;
 
-    ${media.xsm`
+    ${media.xs`
       font-size: 0.5rem;
     `}
   `,
