@@ -19,7 +19,17 @@ const Image = styled.div(
   `,
 )
 
-const Info = styled.div(() => css``)
+const Info = styled.div(
+  ({ theme: { spacing } }) => css`
+    ${Title200} {
+      margin-left: ${spacing(0.3)};
+    }
+
+    ${Body200} {
+      margin-left: ${spacing(0.3)};
+    }
+  `,
+)
 
 const Body = styled(PartialContainer)(
   ({ theme: { spacing, colors } }) => css`
