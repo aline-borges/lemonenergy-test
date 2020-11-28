@@ -7,15 +7,9 @@ const Router = () => {
   return (
     <BrowserRouter>
       <Switch>
-        <Route path="/intro">
-          <Intro />
-        </Route>
-        <Route path="/assignment">
-          <Assignment />
-        </Route>
-        <Route>
-          <Redirect to="/intro" />
-        </Route>
+        <Redirect exact from="/" to="/intro" />
+        <Route path="/intro" exact component={Intro} />
+        <Route path="/assignment" exact component={Assignment} />
       </Switch>
     </BrowserRouter>
   )
