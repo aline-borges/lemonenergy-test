@@ -24,9 +24,9 @@ const Container = styled.button(
   `,
 )
 
-const Button = ({ children, className, onClick }) => {
+const Button = ({ children, onClick }) => {
   return (
-    <Container onClick={onClick} className={className}>
+    <Container onClick={onClick}>
       <Button100>{children}</Button100>
     </Container>
   )
